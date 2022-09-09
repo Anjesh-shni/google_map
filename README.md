@@ -1,5 +1,8 @@
 # google_map
 
+//Anjesh Sahani
+
+//In this tutorial we had implemented google map for android and IOS both.
 A new Flutter project.
 
 ## Getting Started
