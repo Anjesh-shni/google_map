@@ -20,6 +20,7 @@ class _HomeNavState extends State<HomeNav> {
       child: Text("Profiles"),
     ),
   ];
+ 
 
   void onTapNav(int index) {
     setState(() {

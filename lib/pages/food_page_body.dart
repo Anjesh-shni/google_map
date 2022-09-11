@@ -1,3 +1,4 @@
+import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:hotel_lemon/reusable_widget/big_text.dart';
 import 'package:hotel_lemon/reusable_widget/small_text.dart';
@@ -51,24 +52,23 @@ class _FoodPageBodyState extends State<FoodPageBody> {
 
         // /Dots section
 
-        // DotsIndicator(
-        //     dotsCount:5
-        //     position: _currtPaveValue,
-        //     decorator: DotsDecorator(
-        //       activeColor: Colors.grey.shade800,
-        //       size: const Size.square(9.0),
-        //       activeSize: const Size(18.0, 9.0),
-        //       activeShape: RoundedRectangleBorder(
-        //           borderRadius: BorderRadius.circular(Dimen.radius5)),
-        //     ),
-        //   );
-        // }),
+        DotsIndicator(
+          dotsCount: 5,
+          position: _currtPaveValue,
+          decorator: DotsDecorator(
+            activeColor: Colors.green,
+            size: const Size.square(9.0),
+            activeSize: const Size(18.0, 9.0),
+            activeShape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
+          ),
+        ),
 
         const Padding(
           padding: EdgeInsets.only(left: 20, right: 20),
           child: Divider(
             thickness: 1,
-            color: Colors.blue,
+            color: Colors.grey,
           ),
         ), //Recommended Text
         Padding(
@@ -253,7 +253,6 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                 color: Colors.grey.shade600,
               ),
               child: Container(
-                
                 margin: const EdgeInsets.only(left: 10, right: 10, top: 10),
                 padding: const EdgeInsets.only(bottom: 10),
                 child: Column(
