@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print("-------------App Started---------------");
+    debugPrint("-------------App Started---------------");
     return MaterialApp(
       title: 'Hotel Lemon',
       debugShowCheckedModeBanner: false,

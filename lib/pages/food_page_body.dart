@@ -35,7 +35,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
 
   @override
   Widget build(BuildContext context) {
-    print("------------Food Page----------------");
+    debugPrint("-------------Food Page-----------------");
     return Column(
       children: [
         SizedBox(
@@ -64,11 +64,11 @@ class _FoodPageBodyState extends State<FoodPageBody> {
         //   );
         // }),
 
-        Padding(
-          padding: const EdgeInsets.only(left: 20, right: 20),
+        const Padding(
+          padding: EdgeInsets.only(left: 20, right: 20),
           child: Divider(
             thickness: 1,
-            color: Colors.grey.shade600,
+            color: Colors.blue,
           ),
         ), //Recommended Text
         Padding(
@@ -253,6 +253,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                 color: Colors.grey.shade600,
               ),
               child: Container(
+                
                 margin: const EdgeInsets.only(left: 10, right: 10, top: 10),
                 padding: const EdgeInsets.only(bottom: 10),
                 child: Column(

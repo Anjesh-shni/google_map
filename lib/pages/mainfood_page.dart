@@ -15,10 +15,10 @@ class MainFoodPage extends StatefulWidget {
 
 class _MainFoodPageState extends State<MainFoodPage> {
   final formkey = GlobalKey<FormState>();
-  String? _name;
+  String? name;
 
   void addToContact(Contact contact) {
-    print('name: ${contact.name}');
+    debugPrint('name: ${contact.name}');
   }
 
   @override
@@ -75,6 +75,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
                     height: 35,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
+                      border: Border.all(color: Colors.blue),
                       color: Colors.grey.shade800,
                     ),
                     // ignore: prefer_const_constructors
@@ -86,7 +87,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
                               padding: EdgeInsets.only(left: 15),
                               child: Icon(
                                 Icons.search,
-                                color: Colors.amber,
+                                color: Colors.blue,
                                 size: 16,
                               ),
                             ),
@@ -94,7 +95,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
                             labelStyle:
                                 TextStyle(color: Colors.white, fontSize: 12)),
                         keyboardType: TextInputType.multiline,
-                        onSaved: (value) => _name = value!,
+                        onSaved: (value) => name = value!,
                       ),
                     ),
                     //  Padding(

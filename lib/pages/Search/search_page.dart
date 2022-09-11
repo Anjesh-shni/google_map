@@ -10,15 +10,15 @@ class Searchapge extends StatefulWidget {
 
 class _SearchapgeState extends State<Searchapge> {
   final formkey = GlobalKey<FormState>();
-  String? _name;
+  String? name;
 
   void addToContact(Contact contact) {
-    print('name: ${contact.name}');
+    debugPrint('name: ${contact.name}');
   }
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 400,
       child: Form(
         key: formkey,
@@ -32,7 +32,7 @@ class _SearchapgeState extends State<Searchapge> {
                     child: TextFormField(
                       decoration: const InputDecoration(labelText: "name"),
                       keyboardType: TextInputType.name,
-                      onSaved: (value) => _name = value!,
+                      onSaved: (value) => name = value!,
                     ),
                   ),
                 ),
