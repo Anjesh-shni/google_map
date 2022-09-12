@@ -180,6 +180,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                             margin: const EdgeInsets.only(right: 10),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(5),
+                              border: Border.all(color: Colors.blue),
                               color: Colors.grey,
                             ),
                             child: const Center(
